@@ -1,0 +1,192 @@
+/* HEAD */
+
+header {
+    background-color: #111827;
+    padding:10px 20px;
+    background-image: url("../images/banner.png");
+    background-size:cover;
+    background-repeat: no-repeat;
+}
+
+header .container{
+    width: 100%;
+}
+header nav .accesos {
+    width: 100%
+}
+
+header nav ul {
+    list-style: none;
+    width: 100%;
+    margin:0;
+    padding: 0;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    text-transform: uppercase;
+}
+
+header nav img {
+    list-style: none;
+    display:block;
+    width: 200px;
+    height: auto;
+}
+
+header nav a { 
+color: #ffe600;
+background-color: rgba(17, 24, 39, 0.85);
+padding: 8px 16px;
+border-radius: 6px;
+border: 2px solid #000000;
+font-family: 'Arial Black', Impact, sans-serif;
+font-weight: 900;
+text-transform: uppercase;
+font-size: 0.95rem;
+letter-spacing: 1px;
+transition: transform 0.2s ease, background-color 0.2s ease;
+flex: auto;
+text-decoration: none;
+}
+
+/* BODY */
+
+body {
+ margin: 0;
+    background-image: linear-gradient(rgba(17, 24, 39, 0.8), rgba(17, 24, 39, 0.8)), url("../images/background.webp");
+    background-size: cover;         
+    background-position: center;    
+    background-repeat: no-repeat;   
+    background-attachment: fixed;   
+    min-height: 100vh;              
+}
+
+.descripcion {
+    background-color: rgba(17, 24, 39, 0.92); 
+    border: 2px solid #ffe600;                
+    border-radius: 6px;                       
+    padding: 20px 25px;                       
+    margin: 20px auto;                        
+    max-width: 1100px;                        
+    color: #f9fafb;                           
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 1.6;                         
+}
+
+.descripcion h2 {
+    color: #ffe600;                           
+    margin-top: 0;
+    font-style: italic;
+}
+
+.descripcion p {
+    margin-bottom: 0;
+}
+
+textarea {
+    width: 100%;
+    box-sizing: border-box;
+    padding: 10px 12px;
+    border-radius: 6px;
+    border: 2px solid #ffe600;
+    background-color: #1f2937;
+    color: #f9fafb;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 0.95rem;
+    resize: vertical;
+}
+.boton-enviar {
+    color: #ffe600;
+    background-color: rgba(17, 24, 39, 0.9);
+    padding: 10px 22px;
+    border-radius: 6px;
+    border: 2px solid #ffe600;
+    font-family: 'Arial Black', Impact, sans-serif;
+    font-weight: 900;
+    text-transform: uppercase;
+    font-size: 0.95rem;
+    letter-spacing: 1px;
+    cursor: pointer;
+    margin-top: 12px;
+    transition: transform 0.2s ease, background-color 0.2s ease;
+}
+/* FOOTER */
+
+footer#contacto {
+    background-color: #111827;
+    border-top: 3px solid #ffe600;
+    padding: 25px 20px;
+    color: #f9fafb;
+    font-family: 'Arial Black', Impact, sans-serif;
+}
+
+footer#contacto .container {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+footer#contacto .newsletter h3 {
+    color: #ffe600;
+    margin: 0 0 10px 0;
+    text-transform: uppercase;
+    font-size: 1rem;
+    letter-spacing: 1px;
+}
+
+footer#contacto .newsletter form {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+
+footer#contacto .newsletter input[type="email"] {
+    padding: 8px 12px;
+    border-radius: 6px;
+    border: 2px solid #ffe600;
+    background-color: #1f2937;
+    color: #f9fafb;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 0.9rem;
+}
+
+footer#contacto .newsletter button,
+footer#contacto .social a {
+    color: #ffe600;
+    background-color: rgba(17, 24, 39, 0.85);
+    padding: 8px 16px;
+    border-radius: 6px;
+    border: 2px solid #ffe600;
+    font-family: 'Arial Black', Impact, sans-serif;
+    font-weight: 900;
+    text-transform: uppercase;
+    font-size: 0.9rem;
+    letter-spacing: 1px;
+    text-decoration: none;
+    cursor: pointer;
+    transition: transform 0.2s ease, background-color 0.2s ease;
+}
+
+footer#contacto .newsletter button:hover,
+footer#contacto .social a:hover {
+    background-color: #ffe600;
+    color: #111827;
+    transform: scale(1.05);
+}
+
+footer#contacto .social {
+    display: flex;
+    gap: 15px;
+    align-items: center;
+}
+
+.sr-only {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+}

@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto</title>
+    <link rel="stylesheet" href="./utils/style.css" />
+</head>
+<body>
+    <header>
+        <div class="container">
+            <nav class="accessos">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="episodios.html">Episodios</a></li>
+                    <li><a href="sites.html">Plataformas</a></li>
+                    <li><a href="about.html">Quienes somos</a></li>
+                    <li><img src="./images/LOGO_EDICION_DEFINITIVA.png"></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="descripcion">
+            <h1>¿TIENES ALGUN COMENTARIO O SUGERENCIA?</h1>
+            <h2>Te leeremos y comentaremos en el próximo episodio</h2>
+            <form class="contacto" action="comentario.php" method="POST">
+                <label>Nombre (Real, Nick, o Anónimo)</label>
+                <input placeholder="Nombre" type="text"/><br>
+                <label>Edad</label>
+                <input placeholder="Edad" type="number" min="14" max="99"/><br>
+                <label>Correo electrónico</label>
+                <input placeholder="Correo Electrónico" type="email" required/><br>
+                <label for="genero">Género:</label>
+                <select id="genero" name="genero" required>
+                    <option value="" disabled selected>Selecciona tu género</option>
+                    <option value="femenino">Femenino</option>
+                    <option value="masculino">Masculino</option>
+                    <option value="otro">Otro</option>
+                </select><br>
+                <label>Comentarios:</label>
+                <textarea id="comentarios" name="comentarios" rows="5" maxlength="1000" placeholder="Tu madre es tan..." required></textarea>
+                <button type="submit" class="boton-enviar">Enviar</button>
+            </form>
+        </section>
+    </main>
+
+    <footer id="contacto">
+        <div class="container">
+            <div class="newsletter">
+                <h3>No te pierdas ningún episodio</h3>
+                <form action="#" method="POST">
+                <label for="email" class="sr-only">Correo electrónico</label>
+                <input type="email" id="email" name="email" placeholder="ej. nombre@gmail.com" required>
+                <button type="submit">Suscribete YA!</button>
+                </form>
+            </div>
+
+            <div class="social">
+                <a href="https://x.com/DEFINITIVAPOD" aria-label="X (Twitter)">X - Twitter</a>
+                <a href="https://www.twitch.tv/ediciondefinitiva" aria-label="Twitch">Twitch</a>
+                <a href="contact.html">Contactar</a>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>
